@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($row['rol'] == 'Admin') {
                 header("Location: admin_dashboard.php");  // Redirige a la página del administrador
             } else {
-                header("Location: cliente_dashboard.php");  // Redirige a la página del cliente
+                header("Location: index.php");  // Redirige a la página principal del cliente
             }
             exit();
         } else {
@@ -46,7 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="es">
